@@ -1,0 +1,59 @@
+<html>
+    <style>
+        .result-container {
+            background-color: rgba(163, 207, 180, 0.8); /* Optional: to keep the background color with some transparency */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        body {
+            background-image: url('https://cdn.pixabay.com/photo/2014/02/03/16/51/football-257489_640.png');
+            background-size: cover; /* Ensures the image covers the entire background */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            background-position: center; /* Centers the image */
+        }
+    </style>
+    
+
+
+
+    <body>
+
+        <center>
+            <br><br>
+            <h1 style="color: darkblue;">PLAYERS POTENTIAL</h1><br><br><br>
+
+
+        <form method="POST", action="{{url_for('home')}}" style="color: darkblue;">
+           <b>  Age :  <input type="text", name='a', placeholder=" "> 
+                Overall :  <input type="text", name='b', placeholder=" "> 
+                Value :  <input type="text", name='c', placeholder=" "> <br><br><br>
+                Crossing : <input type="text", name='d', placeholder=" "> 
+                Volleys :  <input type="text", name='e', placeholder=" "> 
+                Curve : <input type="text", name='f', placeholder=" "> <br><br><br>
+                LongPassing:  <input type="text", name='g', placeholder=" "> 
+                Jumping :  <input type="text", name='h', placeholder=" "> 
+                Penalties : <input type="text", name='j', placeholder=" "> <br><br><br>
+                Compusure :  <input type="text", name='k', placeholder=" "> 
+                Release Clause : <input type="text", name='l', placeholder=" "> 
+                Offensive_Score: <input type="text", name='m', placeholder=" "> <br><br><br>
+                Defensive_Score :  <input type="text", name='n', placeholder=" "> 
+                BMI : <input type="text", name='o', placeholder=" ">
+                Pace:  <input type="text", name='p', placeholder=" "> <br><br><br> 
+                Technichal_Skill :  <input type="text", name='q', placeholder=" "> 
+                Forward_Strength : <input type="text", name='r', placeholder=" ">
+                Defender_Strength :  <input type="text", name='s', placeholder=" ">  <br><br><br>
+                Goalkeeper_Strength :  <input type="text", name='t', placeholder=" ">
+                Value_log:  <input type="text", name='i', placeholder=" "> <br><br>
+
+
+
+            <input type="submit" , value='PREDICT' ></b>
+        </form>
+
+        <!-- <img src="{{ url_for('static', filename='images/collage.png') }}" alt="flower"> -->
+
+    --  </center>
+    
+     </body>
+
+</html>
